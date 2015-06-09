@@ -28,3 +28,7 @@ D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\obj\Debug\SsysClinic.View.Mdi.frmV
 D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\obj\Debug\SysClinic.View.MdiPrincipal.resources
 D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\obj\Debug\SsysClinic.View.Properties.Resources.resources
 D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\obj\Debug\SysClinic.View.csproj.GenerateResource.Cache
+D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\bin\Debug\SysClinic.Dal.dll
+D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\bin\Debug\SysGestor.RESOURCE.dll
+D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\bin\Debug\SysClinic.Dal.pdb
+D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\bin\Debug\SysGestor.RESOURCE.pdb

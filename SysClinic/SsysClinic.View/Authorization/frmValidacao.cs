@@ -1,4 +1,5 @@
 ﻿using SysClinic.Bll;
+using SysClinic.Bll.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,8 +22,9 @@ namespace SsysClinic.View.Mdi
         private void button1_Click(object sender, EventArgs e)
         {
             MacBll mac = new MacBll();
+            CifraBll cf = new CifraBll();
 
-            label1.Text = mac.PegarEnderecoMAc();
+            label1.Text = cf.GetCriptografiaMD5(mac.PegarEnderecoMAc());
         }
     }
 }

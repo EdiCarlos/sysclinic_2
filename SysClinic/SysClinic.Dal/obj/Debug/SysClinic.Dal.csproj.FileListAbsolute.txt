@@ -12,3 +12,5 @@ D:\GITHUB\sysclinic\SysClinic\SysClinic.Dal\bin\Debug\SysClinic.Dto.pdb
 D:\GITHUB\sysclinic\SysClinic\SysClinic.Dal\obj\Debug\SysClinic.Dal.csprojResolveAssemblyReference.cache
 D:\GITHUB\sysclinic\SysClinic\SysClinic.Dal\obj\Debug\SysClinic.Dal.dll
 D:\GITHUB\sysclinic\SysClinic\SysClinic.Dal\obj\Debug\SysClinic.Dal.pdb
+D:\GITHUB\sysclinic\SysClinic\SysClinic.Dal\bin\Debug\SysGestor.RESOURCE.dll
+D:\GITHUB\sysclinic\SysClinic\SysClinic.Dal\bin\Debug\SysGestor.RESOURCE.pdb
