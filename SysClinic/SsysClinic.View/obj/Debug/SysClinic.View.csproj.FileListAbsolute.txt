@@ -32,5 +32,3 @@ D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\bin\Debug\SysClinic.Dal.dll
 D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\bin\Debug\SysGestor.RESOURCE.dll
 D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\bin\Debug\SysClinic.Dal.pdb
 D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\bin\Debug\SysGestor.RESOURCE.pdb
-D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\obj\Debug\SsysClinic.View.Authorization.frmApresentacao.resources
-D:\GITHUB\sysclinic\SysClinic\SsysClinic.View\obj\Debug\SsysClinic.View.Authorization.frmPasswordValidacao.resources

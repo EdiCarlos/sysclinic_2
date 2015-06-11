@@ -1,9 +1,13 @@
-﻿using SysClinic.DAL.Repositorio;
-using SysClinic.Dto.AuthorizationDto;
-using SysClinic.RESOURCE.Resources;
+﻿using SysClinic.Dto.AuthorizationDto;
+using SysClinic.Resource.Resources;
+using SysGestor.DAL.Repositorio;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace SysClinic.Dal.AuthorizationDal
 {
@@ -15,7 +19,7 @@ namespace SysClinic.Dal.AuthorizationDal
             {
                 SqlCommand comando = new SqlCommand();
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "SELECT chave, empresa, cnpj " +
+                comando.CommandText = "SELECT chave, empresa, cnpj" +
                                       "FROM analise";             
 
                 SqlDataReader dr = Conexao.Buscar(comando);
@@ -35,7 +39,7 @@ namespace SysClinic.Dal.AuthorizationDal
             }
             catch (Exception ex)
             {
-                throw new Exception(Errors.SelectDataError + " - " + ex.Message);
+                throw new Exception(Errors.SelectDataErrors + " - " + ex.Message);
             }
         }
         
@@ -57,7 +61,7 @@ namespace SysClinic.Dal.AuthorizationDal
             }
             catch (Exception ex)
             {
-                throw new Exception(Errors.UpdateDataError + " - " + ex.Message);
+                throw new Exception(Errors.UpdateDataErrors + " - " + ex.Message);
             }
         }
     }

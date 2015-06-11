@@ -44,10 +44,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\sysgestor\SysGestor\SysGestor.RESOURCE\SysClinic.Resource.csproj">
-      <Project>{b8fc8c86-7eed-47c4-a30b-4d84f4f80aa0}</Project>
-      <Name>SysClinic.Resource</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SysClinic.Dal\SysClinic.Dal.csproj">
       <Project>{624639d4-9ef3-4a2e-b900-4fe45bd646d1}</Project>
       <Name>SysClinic.Dal</Name>

@@ -1,10 +1,7 @@
-﻿using SysClinic.Bll.Common;
-using SysClinic.Dal.AuthorizationDal;
+﻿using SysClinic.Dal.AuthorizationDal;
 using SysClinic.Dto.AuthorizationDto;
 using System.Linq;
 using System.Net.NetworkInformation;
-using SysClinic.Resource.Validation;
-using SysClinic.RESOURCE.Resources;
 
 namespace SysClinic.Bll
 {
@@ -36,26 +33,6 @@ namespace SysClinic.Bll
         {
             macDal.AlteraMac(macDto);
         }
-
-        public bool VerificaMac()
-        {
-            CifraBll cf = new CifraBll();
-
-            macDto = GetMac();
-
-            if (macDto.Chave != cf.GetCriptografiaMD5(PegarEnderecoMAc())) return false;
-            else return true;
-        }
-
-        public bool ValidaPassword(string password)
-        {
-            AssertionConcern.AssertArgumentNotEmpty(password, Errors.EmpytValue);
-
-            if (password != "simoes") return false;
-            if (password == "simoes") return true;
-            else return false;           
-        }
-
 
 
     }

@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace SysClinic.DAL.Repositorio
+namespace SysGestor.DAL.Repositorio
 {
     public class Conexao
     {
