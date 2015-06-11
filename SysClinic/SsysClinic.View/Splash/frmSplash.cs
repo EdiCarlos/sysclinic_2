@@ -1,4 +1,6 @@
-﻿using SysClinic.View;
+﻿using SsysClinic.View.Authorization;
+using SysClinic.Bll;
+using SysClinic.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +15,7 @@ namespace SsysClinic.View.Mdi
 {
     public partial class frmSplash : Form
     {
+
         public frmSplash()
         {
             InitializeComponent();
@@ -25,19 +28,35 @@ namespace SsysClinic.View.Mdi
 
         private void CarregaDados()
         {
+            MacBll macBll = new MacBll();
+
             if (progressBar1.Value < 100) 
             {
+                lblStatus.Text = "Carregando Sistema...";
                 progressBar1.Value += 1;
             
             }
             else
             {
                 timerSplash.Stop();
-                if (Formularios.FormPrincipal == null) Formularios.FormPrincipal = new MdiPrincipal();
 
-                this.Hide();
-                Formularios.FormPrincipal.Show();
-                Formularios.FormPrincipal.Focus();
+                if (macBll.VerificaMac() == true)
+                {
+                    if (Formularios.FormPrincipal == null) Formularios.FormPrincipal = new MdiPrincipal();
+
+                    this.Close();
+                    Formularios.FormPrincipal.Show();
+                    Formularios.FormPrincipal.Focus();
+                }
+                else
+                {
+                    if (Formularios.FormApresentacao == null) Formularios.FormApresentacao = new frmApresentacao();
+
+                    this.Hide();
+                    Formularios.FormApresentacao.Show();
+                    Formularios.FormApresentacao.Focus();
+                }
+               
             }
            
         }
@@ -46,5 +65,7 @@ namespace SsysClinic.View.Mdi
         {
             timerSplash.Start();
         }
+
+        
     }
 }

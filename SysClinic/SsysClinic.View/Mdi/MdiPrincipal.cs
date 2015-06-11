@@ -16,5 +16,14 @@ namespace SysClinic.View
         {
             InitializeComponent();
         }
+
+        private void MdiPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Tem certeza que deseja sair do sistema?", Application.CompanyName, MessageBoxButtons.YesNo) ==
+              DialogResult.Yes) Application.Exit();
+            else e.Cancel = true;
+        }
+
+
     }
 }

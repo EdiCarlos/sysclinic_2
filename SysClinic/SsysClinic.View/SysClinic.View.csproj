@@ -44,6 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authorization\frmApresentacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authorization\frmApresentacao.Designer.cs">
+      <DependentUpon>frmApresentacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authorization\frmPasswordValidacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authorization\frmPasswordValidacao.Designer.cs">
+      <DependentUpon>frmPasswordValidacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios.cs" />
     <Compile Include="Splash\frmSplash.cs">
       <SubType>Form</SubType>
@@ -70,6 +82,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SYSCLINICADataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Authorization\frmApresentacao.resx">
+      <DependentUpon>frmApresentacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authorization\frmPasswordValidacao.resx">
+      <DependentUpon>frmPasswordValidacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Splash\frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </EmbeddedResource>

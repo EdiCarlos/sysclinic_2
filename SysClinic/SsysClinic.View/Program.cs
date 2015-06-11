@@ -17,7 +17,7 @@ namespace SysClinic.View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmValidacao());
+            Application.Run(new frmSplash());
         }
     }
 }
